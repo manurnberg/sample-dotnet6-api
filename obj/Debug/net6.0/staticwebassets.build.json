@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eG52+tiCD2Pbyz7gZ5CLqVC7CSyuqlsdX0hZn9xTIIs=",
+  "Source": "sample-rest-api",
+  "BasePath": "_content/sample-rest-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
