@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/SvDlk8kpi2CNCwhfSOxO92NiD4O/sJ3yvf3vVsOWH4oiYMGoAiU9QWQ62y/Ykqi6RvVMJRCCIT6qCRBFBPe+Q==",
+  "dgSpecHash": "FzgKP+lhiyyisG38J8F27GQX/6/Yr+rJIPsZvIetDDQAZe4QQUr0kY2XoXL7bk9Zo45h86mvxx/MRJmiXmRRpA==",
   "success": true,
   "projectFilePath": "/Users/matiasnurnberg/Desktop/dotnet-project/sample-rest-api/sample-rest-api.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,8 @@
     "/Users/matiasnurnberg/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/Users/matiasnurnberg/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/Users/matiasnurnberg/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/matiasnurnberg/.nuget/packages/npgsql/6.0.0/npgsql.6.0.0.nupkg.sha512",
+    "/Users/matiasnurnberg/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.0/npgsql.entityframeworkcore.postgresql.6.0.0.nupkg.sha512",
     "/Users/matiasnurnberg/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.6/sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
     "/Users/matiasnurnberg/.nuget/packages/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg.sha512",
     "/Users/matiasnurnberg/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
