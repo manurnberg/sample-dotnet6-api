@@ -1,0 +1,94 @@
+# Compiled object files
+*.o
+*.obj
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.nupkg
+*.log
+*.vspscc
+*.vssscc
+__pycache__/
+
+# Folders
+bin/
+obj/
+TestResults/
+.vscode/
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.resharper/
+_ReSharper.Caches/
+.project
+.classpath
+.settings/
+packages/
+
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# User-specific files #
+#######################
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Paket
+paket-files/
+
+# NuGet
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+# Npm Packages
+node_modules/
+
+# JetBrains Rider
+.idea/
+
+# Local History for Visual Studio Code
+.history/
+
+# Log files
+*.log

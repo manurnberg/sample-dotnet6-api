@@ -10,5 +10,15 @@ namespace sample_rest_api
             {
             }
             public DbSet<Producto> Productos { get; set; }
+            public DbSet<Category> Categories { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Producto>()
+            .HasOne(p => p.Category)
+            .WithMany(c => c.Productos)
+            .HasForeignKey(p => p.CategoryId);
+
+        }
     }
 }

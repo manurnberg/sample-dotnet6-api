@@ -3,6 +3,13 @@ using sample_rest_api;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add CORS policy Middleware
+
+builder.Services.AddCors(policyBuilder =>
+    policyBuilder.AddDefaultPolicy(policy =>
+        policy.WithOrigins("*").AllowAnyHeader().AllowAnyMethod())
+);
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -24,7 +31,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseCors();
+
+//app.UseAuthorization();
+
 
 app.MapControllers();
 
