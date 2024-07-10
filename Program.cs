@@ -13,14 +13,9 @@ builder.Services.AddCors(policyBuilder =>
 // Add services to the container.
 
 builder.Services.AddControllers();
-// builder.Services.AddDbContext<DataContext>(opt => {
-//     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
-// });
+
 builder.Services.AddDbContext<DataContext>(opt => {
     opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
-    // options => {
-    //     options.MigrationsAssembly("sample_rest_api.Migrations");
-    //});
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
