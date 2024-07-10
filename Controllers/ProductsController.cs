@@ -63,7 +63,8 @@ namespace sample_rest_api {
                 Name = product.Name,
                 Price = product.Price,
                 Available = product.Available,
-                CreatedAt = product.CreatedAt
+                CreatedAt = product.CreatedAt,
+                CategoryId = product.CategoryId
             };
 
                 return Ok(productDto);
@@ -134,10 +135,12 @@ namespace sample_rest_api {
             {
                 await _context.
                 Database.
-                ExecuteSqlRawAsync("UPDATE Productos SET Name = {0}, Price = {1}, Available = {2} WHERE Id = {3}",
-                 updateProductDto.Name, updateProductDto.Price, updateProductDto.Available, id);
+                ExecuteSqlRawAsync("UPDATE Productos SET Name = {0}, Price = {1}, Available = {2}, CategoryId = {3} WHERE Id = {4}",
+                 updateProductDto.Name, updateProductDto.Price, updateProductDto.Available, updateProductDto.CategoryId, id);
 
-                return Ok();
+                 var updatedProduct = await _context.Productos.FromSqlRaw("SELECT * FROM Productos WHERE Id = {0}", id).FirstAsync();
+
+                return Ok(updatedProduct);
             }
             catch (Exception ex)
             {

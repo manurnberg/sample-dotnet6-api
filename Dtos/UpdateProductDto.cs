@@ -11,5 +11,7 @@ namespace sample_rest_api
         public decimal Price { get; set; }
 
         public bool Available { get; set; } = true;
+
+        public int CategoryId { get; set; }
     }
 }
